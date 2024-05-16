@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⏳ Counter example | ⛺ Tent</title>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .app {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 0 0 20px;
+      }
+
+      ul {
+        padding-left: 24px;
+        margin: 0;
+      }
+
+      code {
+        background-color: #f9f9f9;
+        padding: 4px;
+        border-radius: 4px;
+      }
+
+      .target {
+        margin-top: 40px;
+      }
+
+      .footnote {
+        font-size: 0.8em;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h2>⏳ Counter</h2>
+      <p>
+        This is a simple counter example. It demonstrates the fundamentals of
+        Tent.
+      </p>
+      <p>
+        It uses <code>state</code>, <code>dynamic content<sup>1</sup></code> and
+        sets up a button with a regular <code>onclick</code> event.
+      </p>
+      <p class="footnote">
+        <sup>[1]</sup><code>dynamic content</code> is a string with 1 or more
+        placeholders that will be evaluated. In this case, the placeholder is
+        <code>{state.count}</code> and the string is
+        <code>Count: ${state.count}</code>. It is nothing more than a regular
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"
+          >JavaScript template literal</a
+        >.
+      </p>
+      <div class="target"></div>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

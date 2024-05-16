@@ -1,0 +1,15 @@
+{
+  "name": "async-mount",
+  "version": "0.0.1",
+  "description": "Async mount components with ⛺ Tent",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": ["tent", "example"],
+  "author": "sebkolind <sks1993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tentjs/tent": "^0.0.32",
+    "parcel": "^2.12.0"
+  }
+}

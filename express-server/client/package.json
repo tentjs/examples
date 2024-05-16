@@ -1,0 +1,15 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "description": "A server example built with ⛺ Tent",
+  "scripts": {
+    "build": "rm -rf dist .parce-cache && parcel build src/main.ts src/styles.css"
+  },
+  "keywords": ["tent", "example"],
+  "author": "sebkolind <sks1993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tentjs/tent": "^0.0.32",
+    "parcel": "^2.12.0"
+  }
+}

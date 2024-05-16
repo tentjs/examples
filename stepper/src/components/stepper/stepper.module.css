@@ -1,0 +1,32 @@
+.completed {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+.steps {
+  list-style-type: circle;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+}
+
+.done {
+  text-align: center;
+}
+
+.step:empty {
+  display: none;
+}
+
+.description {
+  margin: 0 0 1em 0;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0.5em 0;
+}
