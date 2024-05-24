@@ -12,10 +12,27 @@ import { TentNode } from "@tentjs/tent";
  * ifelse(false, "Truthy"); // ""
  * ```
  */
-const ifelse = (
+function ifelse(
   condition: boolean,
   truthy: TentNode | string,
   falsey?: TentNode | string,
-) => (condition ? truthy : falsey ?? "");
+) {
+  return condition ? truthy : falsey ?? "";
+}
 
-export { ifelse };
+/**
+ * @description
+ * This is a helper function to concatenate classes together. It's
+ * useful when you want to conditionally add classes to an element.
+ *
+ * ```typescript
+ * classes("foo", "bar", "baz"); // "foo bar baz"
+ * classes("foo", falsey && "bar", "baz"); // "foo baz"
+ * classes("foo", truthy && "bar", "baz"); // "foo bar baz"
+ * ```
+ */
+function classes(...args: string[]) {
+  return args.filter(Boolean).join(" ");
+}
+
+export { ifelse, classes };
