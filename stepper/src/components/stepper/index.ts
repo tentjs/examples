@@ -2,7 +2,7 @@ import { type Component, tags } from "@tentjs/tent";
 import { type State, type Step } from "./types";
 import * as styles from "./stepper.module.css";
 import { button } from "../ui/button";
-import { ifelse } from "../../helpers";
+import { classes, ifelse } from "../../helpers";
 import { steps } from "../../steps";
 
 const { ul, li, p, div } = tags;
@@ -20,10 +20,10 @@ const Stepper: Component<State> = {
 };
 
 function viewStep(state: State, idx: number, step: Step) {
-  const title = `${step.title}${step.completed ? " (done)" : ""}`;
-
   return li([
-    p(title, { className: styles.title }),
+    p(step.title, {
+      className: classes(styles.title, step.completed && styles.stepCompleted),
+    }),
     // Show description and continue button only for the current step.
     ifelse(
       idx === state.step,
