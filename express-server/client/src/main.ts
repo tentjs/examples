@@ -1,5 +1,6 @@
 import { type Component, tags, mount } from "@tentjs/tent";
 import { Counter } from "./components/counter";
+import { List } from "./components/list";
 
 const { p } = tags;
 
@@ -9,3 +10,4 @@ const HelloWorld: Component = {
 
 mount(document.querySelector(".hello-world"), HelloWorld);
 mount(document.querySelector(".counter"), Counter);
+mount(document.querySelector(".list"), List);
