@@ -1,0 +1,23 @@
+{
+  "name": "codemirror-example",
+  "version": "0.0.1",
+  "description": "A CodeMirror example built with ⛺ Tent",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [
+    "tent",
+    "example"
+  ],
+  "author": "sebkolind <sks1993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@codemirror/basic-setup": "^0.20.0",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@tentjs/tent": "^0.0.32",
+    "codemirror": "^6.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
