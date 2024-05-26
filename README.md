@@ -1,6 +1,6 @@
 # ✌🏻 Examples
 
-This repository contains examples to help you get started with Tent. Each example is a standalone project that you can run locally.
+This repository contains examples to help you get started with ⛺ Tent. Each example is a standalone project that you can run locally.
 
 You can also use these examples as a reference when building your own projects.
 
@@ -12,6 +12,7 @@ You can also use these examples as a reference when building your own projects.
 - [View Functions](./view-functions)
 - [Async Mount](./async-mount)
 - [Express Server](./express-server)
+- [CodeMirror](./codemirror)
 
 ## 🚀 Check out an example
 
