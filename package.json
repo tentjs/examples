@@ -2,7 +2,6 @@
   "name": "@tentjs/examples",
   "version": "0.0.1",
   "description": "✌🏻 Examples for ⛺ Tent",
-  "main": "index.js",
   "scripts": {
     "new": "node ./new.js"
   },
@@ -10,7 +9,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/tentjs/examples.git"
   },
-  "keywords": ["tent", "examples"],
+  "keywords": [
+    "tent",
+    "examples"
+  ],
   "author": "sebkolind <sks1993@gmail.com>",
   "license": "MIT",
   "bugs": {
