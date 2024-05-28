@@ -5,8 +5,8 @@ const path = require("path");
 const schema = {
   properties: {
     name: {
-      pattern: /^[a-z\-]+$/,
-      message: "Name must be only lowercase letters and dashes",
+      pattern: /^[a-z\-\d]+$/,
+      message: "Name must be only lowercase letters, dashes and numbers",
       required: true,
     },
   },
