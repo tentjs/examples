@@ -1,0 +1,22 @@
+{
+  "name": "starter",
+  "version": "0.0.1",
+  "description": "An example built with ⛺ Tent",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [
+    "tent",
+    "example"
+  ],
+  "author": "sebkolind <sks1993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tentjs/tent": "^0.0.32",
+    "@tentjs/ui": "^0.0.5",
+    "ofcoerce": "^0.4.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
