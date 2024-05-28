@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/tentjs/examples/issues"
   },
-  "homepage": "https://github.com/tentjs/examples#readme"
+  "homepage": "https://github.com/tentjs/examples#readme",
+  "devDependencies": {
+    "prompt": "^1.3.0"
+  }
 }
