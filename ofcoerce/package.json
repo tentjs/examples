@@ -1,7 +1,7 @@
 {
-  "name": "starter",
+  "name": "ofcoerce-example",
   "version": "0.0.1",
-  "description": "An example built with ⛺ Tent",
+  "description": "An ofcoerce example with ⛺ Tent",
   "scripts": {
     "start": "parcel src/index.html"
   },
