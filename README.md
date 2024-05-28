@@ -13,6 +13,8 @@ You can also use these examples as a reference when building your own projects.
 - [Async Mount](./async-mount)
 - [Express Server](./express-server)
 - [CodeMirror](./codemirror)
+- [Of Coerce!](./ofcoerce)
+- [Vanilla JavaScript](./vanilla-js)
 
 ## 🚀 Check out an example
 
