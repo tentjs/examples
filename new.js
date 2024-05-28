@@ -1,6 +1,7 @@
 const prompt = require("prompt");
 const fs = require("fs");
 const path = require("path");
+const { spawn } = require("child_process");
 
 const schema = {
   properties: {
@@ -36,6 +37,19 @@ prompt.get(schema, function (err, result) {
       throw new Error(err);
     }
 
-    console.log(`Example with name "${name}" created successfully!`);
+    const installProcess = spawn("npm", ["install"], {
+      cwd: destination,
+      stdio: "inherit",
+    });
+
+    installProcess.on("close", (code) => {
+      if (code !== 0) {
+        console.error(`npm install process exited with code ${code}`);
+        return;
+      }
+      console.log(
+        `\nExample with name "${name}" created successfully!\nRun \`cd ${name} && npm start\` to get started.\n`,
+      );
+    });
   });
 });
