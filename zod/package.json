@@ -1,0 +1,19 @@
+{
+  "name": "zod-example",
+  "version": "0.0.1",
+  "description": "A Zod example built with ⛺ Tent",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": ["tent", "example", "zod"],
+  "author": "sebkolind <sks1993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tentjs/helpers": "^0.0.1",
+    "@tentjs/tent": "^0.0.32",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

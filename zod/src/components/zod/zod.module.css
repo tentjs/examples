@@ -1,0 +1,20 @@
+.form {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form input[type="submit"] {
+  background-color: #ffa07a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
