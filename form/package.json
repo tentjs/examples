@@ -1,0 +1,21 @@
+{
+  "name": "form-example",
+  "version": "0.0.1",
+  "description": "A form example built with ⛺ Tent",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [
+    "tent",
+    "example"
+  ],
+  "author": "sebkolind <sks1993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tentjs/helpers": "file:../../helpers",
+    "@tentjs/tent": "^0.0.32"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
