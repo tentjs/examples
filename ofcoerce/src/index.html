@@ -48,6 +48,18 @@
         border-radius: 4px;
         margin-top: 40px;
       }
+
+      .form {
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
     </style>
   </head>
   <body>
@@ -57,6 +69,16 @@
         This example uses
         <a href="https://github.com/kossnocorp/ofcoerce">kossnocorp/ofcoerce</a>
         to coerce the sign up form data.
+      </p>
+      <p>
+        Of Coerce! will coerce the <code>user</code> object to a specific type
+        that we specify.
+      </p>
+      <p>
+        In this example only <code>username</code> and <code>e-mail</code> are
+        provided by the user, but the <code>user</code> object contains
+        <code>firstname, lastname & age</code> as well — Of Coerce! will add
+        those with the types we have defined in our schema.
       </p>
       <div class="target"></div>
     </div>

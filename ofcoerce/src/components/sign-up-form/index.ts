@@ -28,11 +28,16 @@ const SignUpForm: Component = {
   view: () =>
     form(
       [
-        Input("text", { name: "username" }),
-        Input("text", { name: "email" }),
-        Input("submit", { value: "Submit" }),
+        Input("text", { placeholder: "Username", name: "username" }),
+        Input("email", { placeholder: "E-mail", name: "email" }),
+        Input("submit", {
+          variant: "secondary",
+          style: "cursor: pointer",
+          value: "Submit",
+        }),
       ],
       {
+        className: "form",
         onsubmit: (e: FormType<HTMLFormElement>) => {
           e.preventDefault();
 
