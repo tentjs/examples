@@ -8,6 +8,7 @@ You can also use these examples as a reference when building your own projects.
 
 - [Counter](./counter)
 - [Todo List](./todo-list)
+- [Fetch](./fetch)
 - [Stepper](./stepper)
 - [View Functions](./view-functions)
 - [Async Mount](./async-mount)
@@ -57,7 +58,7 @@ Here are some examples that are planned for the future. If you'd like to contrib
 - [x] Using `view` functions
 - [ ] CSS Modules
 - [ ] Using `anime` for animations
-- [ ] HTTP requests
+- [x] HTTP requests
 - [ ] A `supabase` example
 - [ ] Using `jest` for testing
 - [ ] Host examples via GitHub Pages
