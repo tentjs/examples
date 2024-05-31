@@ -56,6 +56,7 @@ Here are some examples that are planned for the future. If you'd like to contrib
 - [ ] CSS Modules
 - [ ] Using `anime` for animations
 - [ ] HTTP requests
+- [ ] A `supabase` example
 - [ ] Using `jest` for testing
 - [ ] Host examples via GitHub Pages
 
