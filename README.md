@@ -14,6 +14,7 @@ You can also use these examples as a reference when building your own projects.
 - [Express Server](./express-server)
 - [CodeMirror](./codemirror)
 - [Of Coerce!](./ofcoerce)
+- [Zod](./zod)
 - [Vanilla JavaScript](./vanilla-js)
 
 ## 🚀 Check out an example
