@@ -1,6 +1,6 @@
 # ✌🏻 Examples
 
-This repository contains examples to help you get started with ⛺ Tent. Each example is a standalone project that you can run locally.
+This repository contains examples to help you get started with ⛺ [Tent](https://github.com/tentjs/tent). Each example is a standalone project that you can run locally.
 
 You can also use these examples as a reference when building your own projects.
 
