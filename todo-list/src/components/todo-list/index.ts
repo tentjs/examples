@@ -1,4 +1,5 @@
 import { type Component, tags } from "@tentjs/tent";
+import { on } from "@tentjs/helpers";
 import { type State } from "./types";
 
 const { div, p, ul, li, input, button } = tags;
@@ -13,11 +14,25 @@ const TodoList: Component<State> = {
         oninput: ({ target }) => {
           state.input = target.value;
         },
-        onkeyup: (e: KeyboardEvent) => {
-          if (e.key === "Enter") {
-            handleAdd(state);
-          }
-        },
+        /**
+         * This is a helper function from the `@tentjs/helpers` package.
+         * It is not required, and there is no magic behind it.
+         *
+         * It is just shorter to write than:
+         * ```ts
+         * onkeyup: (e) => {
+         *   if (e.key === "Enter") {
+         *     handleAdd(state);
+         *   }
+         *   if (e.key === "Escape") {
+         *     state.input = "";
+         *   }
+         * }
+         */
+        onkeydown: on({
+          Enter: () => handleAdd(state),
+          Escape: () => (state.input = ""),
+        }),
       }),
       button("Add", { onclick: () => handleAdd(state) }),
       viewError(state),

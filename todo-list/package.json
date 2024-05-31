@@ -5,10 +5,14 @@
   "scripts": {
     "start": "parcel src/index.html"
   },
-  "keywords": ["tent", "example"],
+  "keywords": [
+    "tent",
+    "example"
+  ],
   "author": "sebkolind <sks1993@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@tentjs/helpers": "^0.0.2",
     "@tentjs/tent": "^0.0.32",
     "parcel": "^2.12.0"
   }
