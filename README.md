@@ -9,6 +9,7 @@ You can also use these examples as a reference when building your own projects.
 - [Counter](./counter)
 - [Todo List](./todo-list)
 - [Fetch](./fetch)
+- [Axios](./axios)
 - [Stepper](./stepper)
 - [View Functions](./view-functions)
 - [Async Mount](./async-mount)
