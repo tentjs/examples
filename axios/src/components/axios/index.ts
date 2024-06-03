@@ -24,7 +24,7 @@ const Axios: Component<State> = {
         }),
       ),
       button("Get message", {
-        onclick: async () => getSetMsg(state),
+        onclick: async () => getRandomMsg(state),
       }),
       div([
         input("", {
@@ -44,7 +44,7 @@ const Axios: Component<State> = {
       ]),
     ]),
   async mounted({ state }) {
-    getSetMsg(state);
+    getRandomMsg(state);
   },
 };
 
@@ -62,7 +62,7 @@ async function handleOnEnter(state: State) {
   }
 }
 
-async function getSetMsg(state: State) {
+async function getRandomMsg(state: State) {
   const {
     data: { message },
   } = await client.get<HelloWorldResponse>("/random-message");
