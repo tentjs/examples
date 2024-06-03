@@ -24,7 +24,7 @@ const Axios: Component<State> = {
         }),
       ),
       button("Get message", {
-        onclick: async () => getRandomMsg(state),
+        onclick: () => getRandomMsg(state),
       }),
       div([
         input("", {
