@@ -12,7 +12,8 @@
   "author": "sebkolind <sks1993@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@tentjs/tent": "^0.0.32"
+    "@tentjs/helpers": "^0.0.5",
+    "@tentjs/tent": "^0.0.33-1"
   },
   "devDependencies": {
     "parcel": "^2.12.0"

@@ -1,4 +1,5 @@
 import { type Component, tags } from "@tentjs/tent";
+import { classes, ternary } from "@tentjs/helpers";
 
 const { div, h3, p, ul, li } = tags;
 
@@ -9,11 +10,16 @@ type State = {
 
 const Fetch: Component<State> = {
   state: { posts: [] },
-  view: ({ state }) =>
+  view: ({ state: { posts } }) =>
     div(
-      state.posts.length
-        ? ul(state.posts.map((post) => li([h3(post.title), p(post.body)])))
-        : p("Loading..."),
+      ternary(
+        posts.length > 0,
+        ul(
+          posts.map((post) => li([h3(post.title), p(post.body)])),
+          { className: classes("list", posts.length > 3 && "long-list") },
+        ),
+        p("Loading..."),
+      ),
     ),
   mounted: async ({ state }) => {
     const res = await fetch(
