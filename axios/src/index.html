@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⚡ Axios example | ⛺ Tent</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .app {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 0 0 20px;
+      }
+
+      ul {
+        padding-left: 24px;
+        margin: 0;
+      }
+
+      code {
+        background-color: #f9f9f9;
+        padding: 4px;
+        border-radius: 4px;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: 0;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .error {
+        color: #721c24;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        border-radius: 4px;
+        padding: 10px;
+      }
+
+      .info {
+        color: #0c5460;
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 0.8em;
+      }
+
+      input[type="text"] {
+        margin-top: 30px;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 100%;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+
+      .target {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 4px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h2>⚡ Axios</h2>
+      <p>
+        A simple example using <a href="https://axios-http.com/">Axios</a> for
+        data fetching in a ⛺
+        <a href="https://github.com/tentjs/tent/">Tent</a> component.
+      </p>
+      <p>
+        The example includes a small Express server — remember to start it when
+        testing. 🤓 <br />
+        (<code>cd ./server && npm start</code>)
+      </p>
+      <div class="target"></div>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
