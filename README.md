@@ -12,6 +12,7 @@ You can also use these examples as a reference when building your own projects.
 - [Axios](./axios)
 - [Stepper](./stepper)
 - [View Functions](./view-functions)
+- [`mountAll`](./mount-all)
 - [Async Mount](./async-mount)
 - [Express Server](./express-server)
 - [CodeMirror](./codemirror)
