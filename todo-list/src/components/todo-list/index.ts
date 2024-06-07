@@ -21,21 +21,6 @@ const TodoList: Component<State> = {
 
               if (state.error && state.input !== "") state.error = false;
             },
-            /**
-             * This is a helper function from the `@tentjs/helpers` package.
-             * It is not required, and there is no magic behind it.
-             *
-             * It is just shorter to write than:
-             * ```ts
-             * onkeyup: (e) => {
-             *   if (e.key === "Enter") {
-             *     handleAdd(state);
-             *   }
-             *   if (e.key === "Escape") {
-             *     state.input = "";
-             *   }
-             * }
-             */
             onkeydown: on({
               Enter: () => handleAdd(state),
               Escape: () => (state.input = ""),
