@@ -1,7 +1,12 @@
 type State = {
-  todos: string[];
+  todos: Todo[];
   input: string;
   error: boolean;
+};
+
+type Todo = {
+  title: string;
+  completed: boolean;
 };
 
 enum InputError {

@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  gap: 4px;
+}
+
+.input {
+  width: 100%;
+}
+
+.card {
+  padding: 8px;
+  margin: 4px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #888;
+}
