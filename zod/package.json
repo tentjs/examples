@@ -5,12 +5,16 @@
   "scripts": {
     "start": "parcel src/index.html"
   },
-  "keywords": ["tent", "example", "zod"],
+  "keywords": [
+    "tent",
+    "example",
+    "zod"
+  ],
   "author": "sebkolind <sks1993@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@tentjs/helpers": "^0.0.1",
-    "@tentjs/tent": "^0.0.32",
+    "@tentjs/helpers": "^0.0.6",
+    "@tentjs/tent": "^0.0.33-1",
     "zod": "^3.23.8"
   },
   "devDependencies": {

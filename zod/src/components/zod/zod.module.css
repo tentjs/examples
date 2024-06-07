@@ -18,3 +18,28 @@
   padding: 8px;
   cursor: pointer;
 }
+
+.errors {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.errors li {
+  color: red;
+  margin-bottom: 2px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.success {
+  color: green;
+  background-color: #d4edda;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 13px;
+}

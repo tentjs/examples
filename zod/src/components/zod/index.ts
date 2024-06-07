@@ -1,6 +1,6 @@
 import { type Component, tags } from "@tentjs/tent";
-import { type FormEvent } from "@tentjs/helpers";
-import { z } from "zod";
+import { type FormEvent, ternary } from "@tentjs/helpers";
+import { z, ZodError } from "zod";
 import styles from "./zod.module.css";
 
 const userSchema = z.object({
@@ -13,35 +13,54 @@ const userSchema = z.object({
   email: z.string().email(),
 });
 
-const { form, input } = tags;
+const { div, ul, li, form, input, p } = tags;
 
-const Zod: Component = {
-  view: () =>
-    form(
-      [
-        input("", { placeholder: "Username", name: "username" }),
-        input("", { type: "email", placeholder: "Email", name: "email" }),
-        input("", { type: "number", placeholder: "Age", name: "age" }),
-        input("", { type: "submit", name: "Submit", value: "Submit" }),
-      ],
-      {
-        className: styles.form,
-        onsubmit: (e: FormEvent<HTMLFormElement>) => {
-          e.preventDefault();
+type State = { errors: ZodError[]; valid: boolean };
 
-          const formData = new FormData(e.target as HTMLFormElement);
-          const data = Object.fromEntries(formData.entries());
+const Zod: Component<State> = {
+  state: { errors: [], valid: false },
+  view: ({ state }) => {
+    return div([
+      form(
+        [
+          input("", { placeholder: "Username", name: "username" }),
+          input("", { type: "email", placeholder: "Email", name: "email" }),
+          input("", { type: "number", placeholder: "Age", name: "age" }),
+          input("", { type: "submit", name: "Submit", value: "Submit" }),
+        ],
+        {
+          className: styles.form,
+          onsubmit: (e: FormEvent<HTMLFormElement>) => {
+            e.preventDefault();
 
-          try {
-            userSchema.parse(data);
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
 
-            console.log("Valid data", data);
-          } catch (error) {
-            console.error("Invalid data", error.issues);
-          }
+            try {
+              userSchema.parse(data);
+
+              state.valid = true;
+              state.errors = [];
+            } catch (error) {
+              state.valid = false;
+              state.errors = error.issues;
+            }
+          },
         },
-      },
-    ),
+      ),
+      ternary(
+        state.valid,
+        p("Success! No errors found.", { className: styles.success }),
+      ),
+      ternary(
+        state.errors.length > 0,
+        ul(
+          state.errors.map((error) => li(error.message)),
+          { className: styles.errors },
+        ),
+      ),
+    ]);
+  },
 };
 
 export { Zod };
