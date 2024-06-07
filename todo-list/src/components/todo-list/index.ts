@@ -13,6 +13,8 @@ const TodoList: Component<State> = {
         value: state.input,
         oninput: ({ target }) => {
           state.input = target.value;
+
+          if (state.error && state.input !== "") state.error = false;
         },
         /**
          * This is a helper function from the `@tentjs/helpers` package.
