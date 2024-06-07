@@ -19,8 +19,8 @@ type State = { errors: ZodError[]; valid: boolean };
 
 const Zod: Component<State> = {
   state: { errors: [], valid: false },
-  view: ({ state }) => {
-    return div([
+  view: ({ state }) =>
+    div([
       form(
         [
           input("", { placeholder: "Username", name: "username" }),
@@ -59,8 +59,7 @@ const Zod: Component<State> = {
           { className: styles.errors },
         ),
       ),
-    ]);
-  },
+    ]),
 };
 
 export { Zod };
