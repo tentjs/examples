@@ -20,6 +20,7 @@ You can also use these examples as a reference when building your own projects.
 - [Form](./form)
 - [Of Coerce!](./ofcoerce)
 - [Zod](./zod)
+- [Lucide](./lucide)
 - [Vanilla JavaScript](./vanilla-js)
 
 ## 🚀 Check out an example
