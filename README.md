@@ -13,6 +13,7 @@ You can also use these examples as a reference when building your own projects.
 - [Stepper](./stepper)
 - [View Functions](./view-functions)
 - [`mountAll`](./mount-all)
+- [`keep`](./keep)
 - [Async Mount](./async-mount)
 - [Express Server](./express-server)
 - [CodeMirror](./codemirror)
