@@ -11,7 +11,7 @@ const Keep: Component<State> = {
     return div([
       p(`Count: ${state.count}`),
       keep([
-        p(`Count: ${state.count}`),
+        p(`Count: ${state.count} (I won't change)`),
         button("Increment", { onclick: () => state.count++ }),
       ]),
     ]);
